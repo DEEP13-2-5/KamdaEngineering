@@ -1,0 +1,36 @@
+[
+  {
+    "id": "listing-1",
+    "name": "SS Belt Conveyor System",
+    "category": "conveyor-systems",
+    "price": "₹2,50,000",
+    "image": "https://images.pexels.com/photos/4491443/pexels-photo-4491443.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+    "material": "SS316",
+    "capacity": "500 kg/hr",
+    "description": "Heavy-duty stainless steel belt conveyor for pharmaceutical applications",
+    "specifications": [
+      "SS316 Construction",
+      "Variable Speed Drive",
+      "Food Grade Belt"
+    ],
+    "createdBy": "admin-001",
+    "createdAt": "2026-03-01"
+  },
+  {
+    "id": "listing-2",
+    "name": "Pharmaceutical Mixing Tank",
+    "category": "mixing-agitators",
+    "price": "₹4,75,000",
+    "image": "https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
+    "material": "SS316L",
+    "capacity": "1000L",
+    "description": "High-efficiency mixing tank with agitator for pharmaceutical processing",
+    "specifications": [
+      "SS316L Construction",
+      "Jacketed Design",
+      "CIP Compatible"
+    ],
+    "createdBy": "admin-001",
+    "createdAt": "2026-03-05"
+  }
+]

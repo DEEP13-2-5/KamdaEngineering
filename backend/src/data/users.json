@@ -1,0 +1,10 @@
+[
+  {
+    "id": "admin-001",
+    "name": "Admin",
+    "email": "admin@kamda.com",
+    "password": "$2a$10$Toq8Rj81z2WNXwKetwhCwOEWBkvNSM4cBipV/dJnIMZiR4rRkMBr2",
+    "company": "Kamda Engineering Works",
+    "role": "admin"
+  }
+]

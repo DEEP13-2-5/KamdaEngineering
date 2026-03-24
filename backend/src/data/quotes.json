@@ -1,0 +1,25 @@
+[
+  {
+    "id": "quote-1774353394109",
+    "name": "Test User",
+    "email": "test@example.com",
+    "company": "Test Corp",
+    "product": "SS Belt Conveyor",
+    "description": "Test message from the new quote system",
+    "photo": null,
+    "status": "pending",
+    "createdAt": "2026-03-24T11:56:34.109Z"
+  },
+  {
+    "id": "quote-1774368446377",
+    "name": "Alice",
+    "email": "alice@example.com",
+    "company": "",
+    "product": "Conveyor Systems",
+    "quantity": "",
+    "description": "Need it fast",
+    "photo": null,
+    "status": "pending",
+    "createdAt": "2026-03-24T16:07:26.378Z"
+  }
+]
