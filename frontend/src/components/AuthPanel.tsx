@@ -32,13 +32,13 @@ const AuthPanel: React.FC<AuthPanelProps> = ({ isOpen, onClose }) => {
     setError('');
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setSuccess('');
 
     if (isLogin) {
-      const result = login(formData.email, formData.password);
+      const result = await login(formData.email, formData.password);
       if (result.success) {
         setSuccess('Logged in successfully!');
         setTimeout(() => {
@@ -57,7 +57,7 @@ const AuthPanel: React.FC<AuthPanelProps> = ({ isOpen, onClose }) => {
         setError('Password must be at least 6 characters');
         return;
       }
-      const result = signup(
+      const result = await signup(
         formData.name,
         formData.email,
         formData.password,

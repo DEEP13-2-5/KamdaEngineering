@@ -22,7 +22,8 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const API_URL = `${import.meta.env.VITE_API_URL}/auth`;
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://kamdaengineering.onrender.com/api';
+const API_URL = `${API_BASE_URL}/auth`;
 
 export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
@@ -50,10 +51,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
       });
-      const data = await response.json();
+      let data: any = null;
+      try {
+        data = await response.json();
+      } catch {
+        data = null;
+      }
       
       if (!response.ok) {
-        return { success: false, error: data.message || 'Login failed' };
+        return { success: false, error: data?.message || `Login failed (${response.status})` };
       }
 
       setUser(data.user);
@@ -80,10 +86,15 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password, company, role })
       });
-      const data = await response.json();
+      let data: any = null;
+      try {
+        data = await response.json();
+      } catch {
+        data = null;
+      }
 
       if (!response.ok) {
-        return { success: false, error: data.message || 'Signup failed' };
+        return { success: false, error: data?.message || `Signup failed (${response.status})` };
       }
 
       setUser(data.user);
