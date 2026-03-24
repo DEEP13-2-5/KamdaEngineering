@@ -21,5 +21,17 @@
     "photo": null,
     "status": "pending",
     "createdAt": "2026-03-24T16:07:26.378Z"
+  },
+  {
+    "id": "quote-1774376042203",
+    "name": "eeee",
+    "email": "eeeee@gmail.com",
+    "company": "eeee",
+    "product": "Laboratory Furniture",
+    "quantity": "",
+    "description": "eeeee",
+    "photo": null,
+    "status": "pending",
+    "createdAt": "2026-03-24T18:14:02.203Z"
   }
 ]
